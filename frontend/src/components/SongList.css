@@ -1,0 +1,86 @@
+.song-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.song-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+}
+
+.song-card-info {
+  flex-grow: 1;
+}
+
+.song-card-info h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-heading);
+  margin: 0;
+}
+
+.song-card-info p {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.song-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.song-card-link {
+  color: var(--text-muted);
+  font-size: 20px;
+}
+
+.song-card-link:hover {
+  color: var(--teal);
+}
+
+.song-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.song-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+}
+
+.song-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 900px) {
+  .song-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .song-card-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+select {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.list {
+  border: 2px solid black;
+  border-radius: 10px;
+}

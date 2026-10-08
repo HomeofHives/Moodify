@@ -1,0 +1,19 @@
+.playlist-card {
+    padding: 16px;
+}
+
+.playlist-card h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+    color: var(--text-heading);
+}
+
+.playlist-card p {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+}
+
+.playlist-card .btn {
+    width: 100%;
+}

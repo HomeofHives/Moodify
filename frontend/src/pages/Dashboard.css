@@ -1,0 +1,66 @@
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.dashboard-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+}
+
+/* Mood Selector */
+.mood-selector {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.mood-btn {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid var(--border-light);
+    background-color: var(--bg-white);
+    color: var(--text-body);
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: capitalize;
+}
+
+.mood-btn:hover {
+    border-color: var(--text-muted);
+}
+
+.mood-btn.active {
+    border-width: 2px;
+    padding: 9px;
+    transform: scale(1.05);
+}
+
+.mood-btn.active-Happy {
+    border-color: var(--mood-happy);
+}
+
+.mood-btn.active-Sad {
+    border-color: var(--mood-sad);
+}
+
+.mood-btn.active-Focused {
+    border-color: var(--mood-focused);
+}
+
+.mood-btn.active-Energetic {
+    border-color: var(--mood-energetic);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dashboard-layout {
+        grid-template-columns: 1fr;
+    }
+}
